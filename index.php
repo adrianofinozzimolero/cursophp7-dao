@@ -31,13 +31,19 @@ echo $usuario;*/
 $aluno->insert();
 echo $aluno;*/
 
-//Altera um usuário
+/*Altera um usuário
 $usuario = new Usuario();
 $usuario->loadById(9);
 $usuario->update('Almeida','Almeida');
 echo $usuario;
 $search = usuario::search("Almeida");
-echo json_encode($search);
+echo json_encode($search);*/
+
+//Apaga um usuário
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
+echo $usuario;
 
 
 ?>
