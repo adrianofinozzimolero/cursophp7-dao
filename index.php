@@ -18,8 +18,13 @@ echo json_encode($usuarios);*/
 /*$search = Usuario::search("s");
 echo json_encode($search);*/
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("jose", "1234567890");
-echo $usuario;
+echo $usuario;*/
+
+$aluno = new Usuario("aluno", "@lun0");
+$aluno->insert();
+echo $aluno;
+
 
 ?>
